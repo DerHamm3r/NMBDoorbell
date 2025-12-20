@@ -6,7 +6,7 @@
     <!--	<OutputPath>..\Build\Doorbell\</OutputPath>-->
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="ZanarkandDoorbell.json" />
+    <Content Include="NMBDoorbell.json" />
   </ItemGroup>
 
   <ItemGroup>
