@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Dalamud.NET.Sdk/14.0.1">
   <PropertyGroup>
     <Version>1.0.4.1</Version>
-    <AssemblyName>ZanarkandDoorbell</AssemblyName>
+    <AssemblyName>NMBDoorbell</AssemblyName>
     <TargetFramework>net10.0-windows7.0</TargetFramework>
     <!--	<OutputPath>..\Build\Doorbell\</OutputPath>-->
   </PropertyGroup>
