@@ -14,7 +14,7 @@ namespace Doorbell;
 
 public sealed class Plugin : IDalamudPlugin
 {
-    public static string Name => "Zanarkand Doorbell";
+    public static string Name => "NMB Doorbell";
 
     public static Config Config { get; set; } = new();
 
