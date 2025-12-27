@@ -13,7 +13,7 @@ env:
   SOLUTION_NAME: Doorbell
   INTERNAL_NAME: NMBDoorbell
   RELEASE_DIR: bin\x64\Release\NMBDoorbell
-  PERSONAL_PLUGIN_REPO: Maxunit/MyDalamudPlugins
+  PERSONAL_PLUGIN_REPO: DerHamm3r/MyDalamudPlugins
   PR_PLUGIN_REPO: DerHamm3r/DalamudPlugins
   DOTNET_CLI_TELEMETRY_OPTOUT: true
 
