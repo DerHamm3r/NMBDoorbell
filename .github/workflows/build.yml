@@ -55,20 +55,34 @@ jobs:
 
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+  needs: build
+  runs-on: ubuntu-latest
+  steps:
+    - name: Debug PAT presence
+      env:
+        PAT: ${{ secrets.PAT }}
+      run: |
+        if [ -z "$PAT" ]; then
+          echo "PAT is EMPTY"
+          exit 1
+        else
+          echo "PAT exists (not printing value)"
+        fi
+
     - uses: actions/checkout@v4
       with:
         repository: ${{ env.PERSONAL_PLUGIN_REPO }}
         token: ${{ secrets.PAT }}
+
     - uses: actions/download-artifact@v4
       with:
         name: PluginRepoZip
         path: plugins/${{ env.INTERNAL_NAME }}
+
     - uses: EndBug/add-and-commit@v7
       with:
         add: --all
         author_name: GitHub Action
         author_email: github-actions[bot]@users.noreply.github.com
         message: Update ${{ env.INTERNAL_NAME }}
+
