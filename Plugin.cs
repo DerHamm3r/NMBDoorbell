@@ -104,7 +104,7 @@ public sealed class Plugin : IDalamudPlugin
         configWindow.IsOpen = !configWindow.IsOpen;
     }
 
-    private static readonly ushort[] HouseTerritoryIds = {
+    private static readonly uint[] HouseTerritoryIds = {
         // Small, Medium, Large, Chamber, Apartment
         282, 283, 284, 384, 608, // Mist
         342, 343, 344, 385, 609, // Lavender Beds
@@ -117,7 +117,7 @@ public sealed class Plugin : IDalamudPlugin
     private Dictionary<uint, PlayerObject> KnownObjects = new();
     private Stopwatch TimeInHouse = new();
 
-    private void OnTerritoryChanged(ushort territory)
+    private void OnTerritoryChanged(uint territory)
     {
         KnownObjects.Clear();
         TimeInHouse.Stop();
