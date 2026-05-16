@@ -112,6 +112,7 @@ public sealed class Plugin : IDalamudPlugin
         649, 650, 651, 652, 655, // Shirogane
         980, 981, 982, 983, 999, // Empyreum 
         1249, 1250, 1251,        // Minimalist
+        1374, 1375, 1376,        // Minimalist Dark (7.5)
     };
 
     private Dictionary<uint, PlayerObject> KnownObjects = new();
